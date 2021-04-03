@@ -54,7 +54,7 @@ camera.rotation = Vec3(15, 0, 0)
 player.cursor.enabled = False
 
 walls = make_walls(10000)
-floor = make_floor(12, 30)
+floor = make_floor(13, 30)
 
 
 lower_floor = Entity(model='cube', color=COLOR_RUST,  position=(0, -2, 0), 
@@ -66,7 +66,7 @@ light = Lighting(player, player.position + Vec3(1, 7, 0), color.black, rotation=
 siren_light = Lighting(player, player.position + Vec3(1, 7, 0), color.black, rotation=player.down)
 CheckPoint.init_light(light)
 
-city = Entity(model='assets/models/city800', color=COLOR_RUST, position =(0, .1, 0), collider='mesh', reload=True)
+city = Entity(model='assets/models/city800', color=COLOR_RUST_2X, position =(0, .1, 0), collider='mesh', reload=True)
 
 car = Entity(model='assets/models/80scop', 
         texture='assets/models/cars', 
